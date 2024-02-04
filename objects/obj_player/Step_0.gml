@@ -23,4 +23,4 @@ if (place_meeting(x, y + yspd, obj_wall))
 x+=xspd; //Build in variable for the object
 y+=yspd;
 
-
+// end
