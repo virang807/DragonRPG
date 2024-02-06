@@ -42,12 +42,16 @@
     {"id":{"name":"spr_house_tile","path":"sprites/spr_house_tile/spr_house_tile.yy",},},
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"obj_bed","path":"objects/obj_bed/obj_bed.yy",},},
+    {"id":{"name":"outside_house","path":"rooms/outside_house/outside_house.yy",},},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
     {"id":{"name":"ts_house_tiles","path":"tilesets/ts_house_tiles/ts_house_tiles.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_bed","path":"sprites/spr_bed/spr_bed.yy",},},
+    {"id":{"name":"player_house","path":"rooms/player_house/player_house.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"player_house","path":"rooms/player_house/player_house.yy",},},
+    {"roomId":{"name":"outside_house","path":"rooms/outside_house/outside_house.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

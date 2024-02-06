@@ -22,6 +22,9 @@
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"spr_house_tile","order":5,"path":"sprites/spr_house_tile/spr_house_tile.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"obj_bed","order":2,"path":"objects/obj_bed/obj_bed.yy",},
+    {"name":"outside_house","order":1,"path":"rooms/outside_house/outside_house.yy",},
     {"name":"spr_player_left","order":3,"path":"sprites/spr_player_left/spr_player_left.yy",},
+    {"name":"spr_bed","order":6,"path":"sprites/spr_bed/spr_bed.yy",},
   ],
 }
