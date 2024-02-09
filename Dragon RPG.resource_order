@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spir_warp_transition","order":9,"path":"sprites/spir_warp_transition/spir_warp_transition.yy",},
     {"name":"spr_player_up","order":4,"path":"sprites/spr_player_up/spr_player_up.yy",},
     {"name":"spr_player_right","order":2,"path":"sprites/spr_player_right/spr_player_right.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
@@ -24,7 +25,10 @@
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"obj_bed","order":2,"path":"objects/obj_bed/obj_bed.yy",},
     {"name":"outside_house","order":1,"path":"rooms/outside_house/outside_house.yy",},
+    {"name":"obj_warp_block","order":3,"path":"objects/obj_warp_block/obj_warp_block.yy",},
+    {"name":"spr_warp_block","order":7,"path":"sprites/spr_warp_block/spr_warp_block.yy",},
     {"name":"spr_player_left","order":3,"path":"sprites/spr_player_left/spr_player_left.yy",},
+    {"name":"obj_warp","order":4,"path":"objects/obj_warp/obj_warp.yy",},
     {"name":"spr_bed","order":6,"path":"sprites/spr_bed/spr_bed.yy",},
   ],
 }
