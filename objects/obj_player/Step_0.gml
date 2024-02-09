@@ -7,6 +7,14 @@ down_key = keyboard_check(ord("S"));
 xspd = (right_key - left_key) * move_spd;
 yspd = (down_key - up_key) * move_spd; // Up in movement means y value goes down
 
+
+// Pause
+if(instance_exists(obj_pause))
+{
+	xspd = 0;
+	yspd = 0;
+}
+
 // Set the Sprite
 mask_index = sprite[DOWN];
 
