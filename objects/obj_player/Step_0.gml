@@ -87,3 +87,16 @@ if(xspd == 0 && yspd == 0)
 // Depth
 depth = -bbox_bottom;
 
+
+var interactKeyPressed = keyboard_check_released(ord("E"));
+if ( (place_meeting(x-1 , y , obj_bed) || place_meeting(x+1 , y , obj_bed)|| 
+	  place_meeting(x , y-1 , obj_bed) || place_meeting(x , y+1 , obj_bed))
+&& interactKeyPressed )
+{
+	instance_create_depth(0,0, 1000, obj_dialogSampleA);
+}
+
+
+
+
+
