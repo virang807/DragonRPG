@@ -40,8 +40,9 @@ if(accept_key)
 		case 1:
 			switch(pos)
 			{
-				// Windows
+				// Dialogue
 				case 0:
+					room_goto(rmTestDialogue);
 					break;
 					
 				// Brightness
