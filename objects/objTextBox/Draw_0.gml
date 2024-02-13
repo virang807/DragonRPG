@@ -12,9 +12,7 @@ if(!setup)
 	draw_set_font(global.font_main);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
-	
-	// Loop through the pages
-	pageNumber = array_length(text);
+
 	for(var p = 0; p < pageNumber; p++)
 	{
 		// Find how many characters are on each page and stor enumber in textLength array
@@ -49,6 +47,11 @@ if(acceptKey)
 		// Destroy Text Box
 		else
 		{
+			// Link text for Options
+			if(optionNumber > 0)
+			{
+				createTextbook(optionLinkId[optionPosition]);
+			}
 			instance_destroy();
 		}
 	}
@@ -61,18 +64,51 @@ if(acceptKey)
 }
 
 
+
 // Draw the textbox
+var _txtBX = textBoxX + textXOffset[page];
+var _txtBY = textBoxY;
+
 txtbImg += txtbImgSpeed;
 txtbSprWidth = sprite_get_width(txtbSpr);
 txtbSprHeight = sprite_get_height(txtbSpr);
 
 // Draw back of the textbox
-draw_sprite_ext(txtbSpr, txtbImg, textBoxX + textXOffset[page], textBoxY, textbookWidth/txtbSprWidth, textboxHeight/txtbSprHeight, 0, c_white, 1  );
+draw_sprite_ext(txtbSpr, txtbImg, _txtBX, _txtBY, textbookWidth/txtbSprWidth, textboxHeight/txtbSprHeight, 0, c_white, 1  );
 
+
+// Options
+if(drawChar == textLength[page] && page == pageNumber-1)
+{
+	
+	// Option Selection
+	optionPosition += keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
+	optionPosition = clamp(optionPosition, 0, optionNumber-1);
+	
+	
+	// Draw the Options
+	var _opSpace = 15;
+	var _opBorder = 4;
+	for (var op = 0; op < optionNumber; op++)
+	{
+		// Draw Option Box
+		var _oWidth = string_width(option[op]) + _opBorder*2;
+		draw_sprite_ext(txtbSpr, txtbImg, _txtBX + 16, _txtBY - _opSpace*optionNumber + _opSpace*op - 1, _oWidth/txtbSprWidth, (_opSpace-1)/txtbSprHeight, 0, c_white, 1);
+		
+		// The Arrow
+		if(optionPosition == op)
+		{
+			draw_sprite(sprTextBoxArrow, 0, _txtBX, _txtBY - _opSpace*optionNumber + _opSpace*op - 1);
+		}
+		
+		// Option Text
+		draw_text(_txtBX + 16 + _opBorder,  _txtBY - _opSpace*optionNumber + _opSpace*op -2, option[op])
+	}
+}
 
 // Draw the text
 var _drawtext = string_copy(text[page], 1, drawChar);
-draw_text_ext(textBoxX + textXOffset[page] + border, textBoxY + border, _drawtext, lineSep, lineWidth);
+draw_text_ext(_txtBX + border, _txtBY + border, _drawtext, lineSep, lineWidth);
 
 
 

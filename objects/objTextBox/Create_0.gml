@@ -15,14 +15,16 @@ txtbImgSpeed = 6/60;
 // Text
 page = 0;
 pageNumber = 0;
-text[0] = "Hello, my name is Virang Patel";
-text[1] = "I like to make video games about Dragons and have opened up my new studio, Dragon Byte";
-text[2] = "hehe";
-text[3] = "I am not a furry";
-text[4] = "Anyways, please check out my patreon for exclusive access to my nudes";
+text[0] = "";
 textLength[0] = string_length(text[0]);
 drawChar = 0;
 textSpeed = 1;
+
+// Options
+option[0] = "";
+optionLinkId[0] = -1;
+optionPosition = 0;
+optionNumber = 0;
 
 setup = false;
 
