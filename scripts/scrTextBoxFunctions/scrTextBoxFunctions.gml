@@ -1,5 +1,16 @@
+function scrSetDefaultForText(){
+	lineBreakPause[0, pageNumber] = 999;
+	lineBreakNum[pageNumber] = 0;
+	lineBreakOffset[pageNumber] = 0;
+}
+
+
+
 // @param text
 function scrText(_text){
+	
+	scrSetDefaultForText();
+	
 	text[pageNumber] = _text;
 	pageNumber++;
 

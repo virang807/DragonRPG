@@ -17,6 +17,11 @@ page = 0;
 pageNumber = 0;
 text[0] = "";
 textLength[0] = string_length(text[0]);
+
+char[0,0] = " ";
+charX[0,0] = 0;
+charY[0,0] = 0;
+
 drawChar = 0;
 textSpeed = 1;
 
@@ -28,7 +33,9 @@ optionNumber = 0;
 
 setup = false;
 
-
+// Effects
+scrSetDefaultForText();
+lastFreeSpace = 0;
 
 
 

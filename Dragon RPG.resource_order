@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Dialogue System","order":17,"path":"folders/Dialogue System.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
@@ -18,7 +18,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"spir_warp_transition","order":9,"path":"sprites/spir_warp_transition/spir_warp_transition.yy",},
     {"name":"spr_bg_forest","order":10,"path":"sprites/spr_bg_forest/spr_bg_forest.yy",},
     {"name":"sprMenuBG","order":2,"path":"sprites/sprMenuBG/sprMenuBG.yy",},
